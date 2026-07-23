@@ -8,4 +8,17 @@ services:
       - NET_RAW
     environment:
       - WIFI_IFACE=wlan0
+      # - PORT=18080
+      # - REFRESH_MS=2000
+      # - DISK_PATHS=/,/boot
+      # - NET_IFACES=wlan0,eth0
+      # - RETENTION_HOURS=168
+      # Optional HTTP basic auth (set both to enable):
+      # - PZMON_USER=pi
+      # - PZMON_PASSWORD=changeme
+    volumes:
+      - pzmon-data:/data
     restart: unless-stopped
+
+volumes:
+  pzmon-data:

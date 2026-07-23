@@ -1,2 +1,9 @@
 .venv/
 .idea/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.db
+*.db-wal
+*.db-shm
+data/
